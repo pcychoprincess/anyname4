@@ -1,0 +1,128 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 4px solid rgb(255, 174, 0);
+    margin: auto;
+    background-image: url(https://st4.depositphotos.com/5078157/20181/i/450/depositphotos_201816586-stock-photo-cloudy-blue-sky-abstract-background.jpg);
+}
+#dino{
+    width: 60px;
+    height: 37px;
+/*    background-image: url(img\dinozavr-animatsionnaya-kartinka-0119.gif);*/
+    background-size: 60px 37px;
+    position: relative;
+    top:150px;
+}
+#cactus{
+    width: 30px;
+    height: 38px;
+    background-image: url(img/cactus2.webp);
+    background-size: 30px 38px;
+    position: relative;
+    top:124px;
+    left: 700px;
+    animation: cactusMov 2.2s infinite linear;}
+#sun{
+    width: 38px;
+    height: 38px;
+    background-image: url(img/sun.png);
+    background-size: 38px 38px;
+    position: relative;
+    top:10px;
+    left: 500px;
+    animation: sunMov 17s infinite linear;
+}
+#moon{
+    width: 32px;
+    height: 32px;
+    background-image: url(img/photo_5330164593588296785_m-removebg-preview.png);
+    background-size: 32px 32px;
+    position: relative;
+    top: 150px;
+    opacity: 0;
+    left: 500px;
+    animation: moonMov 17s infinite linear;
+}
+@keyframes cactusMov{
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px
+    }
+}
+@keyframes moonMov{
+    0%{ opacity: 0;
+        top:150px;
+    }
+    20%{opacity: 0;
+        top:150px;
+    }
+    37%{
+        opacity: 0;
+    }
+    49%{
+        opacity: 1;
+    }
+    50%{
+        top: -30px;
+        opacity: 1;
+    }
+    70%{top: -30px;
+        opacity: 1;
+    }
+    83%{
+        opacity: 0;
+    }
+    100%{
+        top: 150px;
+        opacity: 0;
+    }
+}
+@keyframes sunMov{
+    0%{ opacity: 1;
+        top:10px;
+    }
+    20%{opacity: 1;
+        top:10px;
+    }
+    35%{
+        opacity: 0;
+    }
+    50%{
+        top: 150px;
+        opacity: 0;
+    }
+    70%{top: 150px;
+        opacity: 0;
+    }
+    85%{
+        opacity: 0;
+    }
+    100%{
+        top: 10px;
+        opacity: 1;
+    }
+}
+.jump{
+    animation: jump 1.2s linear;
+}
+@keyframes jump{
+    0%{
+        top: 150px}
+    30%{
+        top: 50px;
+    }
+    70%{top: 120px;
+
+    }
+    80%{
+        top:130px;
+    }
+    90%{
+        top:140px;
+    }
+    100%{
+        top: 150px;
+    } 
+}
